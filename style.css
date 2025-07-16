@@ -2,20 +2,44 @@ body {
   font-family: Arial, sans-serif;
   padding: 20px;
 }
-.malla {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.ramo {
-  background-color: #cde;
-  padding: 20px;
+
+h1 {
   text-align: center;
-  cursor: pointer;
-  border-radius: 5px;
 }
-.info {
-  margin-top: 20px;
-  padding: 10px;
+
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.semestre {
   border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px;
+  background: #f9f9f9;
 }
+
+.semestre h2 {
+  text-align: center;
+}
+
+.semestre ul {
+  list-style: none;
+  padding: 0;
+}
+
+.semestre li {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.basico { background-color: #4caf50; }         /* verde */
+.valores { background-color: #ff9800; }        /* naranjo */
+.especialidad { background-color: #2196f3; }   /* azul */
+.empleabilidad { background-color: #9c27b0; }  /* morado */
+.complementaria { background-color: #607d8b; } /* gris azulado */
