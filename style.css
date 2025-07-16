@@ -1,29 +1,31 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #f4f4f4;
 }
 
 h1 {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .malla {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-  justify-content: center;
+  padding: 10px;
 }
 
 .semestre {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 10px;
-  width: 250px;
-  background: #f9f9f9;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .semestre h2 {
   text-align: center;
+  color: #333;
 }
 
 .semestre ul {
@@ -33,13 +35,16 @@ h1 {
 
 .semestre li {
   margin: 5px 0;
-  padding: 8px;
-  border-radius: 4px;
-  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
 }
 
-.basico { background-color: #4caf50; }         /* verde */
-.valores { background-color: #ff9800; }        /* naranjo */
-.especialidad { background-color: #2196f3; }   /* azul */
-.empleabilidad { background-color: #9c27b0; }  /* morado */
-.complementaria { background-color: #607d8b; } /* gris azulado */
+/* Colores por tipo */
+.basico { background-color: #4caf50; }         /* Verde */
+.valores { background-color: #ff9800; }        /* Naranjo */
+.especialidad { background-color: #2196f3; }   /* Azul */
+.empleabilidad { background-color: #9c27b0; }  /* Morado */
+.complementaria { background-color: #607d8b; } /* Gris azulado */
+.practica { background-color: #795548; }       /* Café */
+.idioma { background-color: #00bcd4; }         /* Celeste */
